@@ -1,0 +1,96 @@
+in bash terminal:
+python -m venv .venv
+
+source .venv/scripts/activate
+
+deactivate
+
+ctr shift p ->> python select interpreter ; 3.9
+
+rm -r .venv/
+
+## in power shell
+
+python -m venv .venv
+
+(restart)
+
+pip install flask
+
+flask run
+
+## https://insomnia.rest/download
+
+### create stores in rest AIP (next)
+
+c:/Users/mozgo/Documents/Studies/Udemy/Learn Flask, A web Development Framework of Python/program/.venv/Scripts/Activate.ps1
+
+This may activate venv in power shell.
+.\.venv\Scripts\Activate 
+
+###
+list of commands in docker : 
+
+% docker
+
+ctrl j : close and open terminal
+
+% docker run -p 5005:5000 rest-apis-flask-python
+
+% docker run -d -p 5005:5000 rest-apis-flask-python
+# in the background
+
+% docker run -dp 5005:5000 rest-apis-flask-python
+
+% docker build -t flask-smorest-api .
+
+% docker run -dp 5005:5000 -w /app -v "$(pwd):/app" flask-smorest-api
+ 
+% pip install -r requirements.txt
+
+### paste to the terminsal to generate secret key:
+% python
+% import secrets
+% secrets.SystemRandom().getrandbits(128)
+
+### flask migrate
+### activate virtual environment
+% pip install flask-migrate
+
+% flask db init
+
+% flask db upgrade
+
+% flask db migrate
+
+% github commands
+% git init
+
+% ls -a 
+### .git folder to save git files
+
+% clear
+
+% git status - what's going on in the repository
+
+% main is a place for commits by default
+
+.gitignore : files not to save in git repository
+for example .venv, .vscode, __pycache__, data.db, *.pyc, .DS_Store
+
+% git add.
+
+% git em --cached schemas.py
+
+% git status #(schemas.py is now untracked)
+% git add schemas.py
+% git commit # to staging area
+commin message, I to insert at first
+"press" ESC
+"type" :wq
+
+# modify app.py
+
+
+
+
